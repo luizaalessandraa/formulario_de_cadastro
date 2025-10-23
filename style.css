@@ -1,1 +1,109 @@
-/* Add styles here */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+
+}
+
+:root{
+    font-size: 62.5;
+}
+#page {
+    max-width: 1200px;
+    margin-inline:auto;
+}
+
+body {
+    font-size: 1.6rem;
+    background:oklch(13% 0.028 261.692);
+    color: #FFF
+}
+ header {
+    padding-block: 2rem;
+    text-align: center;
+ }
+ 
+ fieldset {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+
+    input {
+        display: block;
+        margin-top:.6rem;
+        padding: .7rem;
+        border-radius: 1rem;
+        border: none;
+    }
+
+    input:focus {
+        outline: 2px solid oklch(29.3% 0.136 325.661);
+
+    }
+
+    input::placeholder {
+        color:blueviolet
+    }
+    
+    div{
+        margin-bottom:1rem ;
+    }
+
+    input[type=checkbox],
+    input[type=radio]{
+        display: inline-block;
+        outline: none;
+    }
+
+ }
+
+ fieldset:nth-of-type(2) >div{
+    margin-bottom: 2rem;
+    
+    h2{
+        margin-bottom: 1 rem;
+    }
+    textarea {
+        display: block;
+        margin-top: 1rem;
+        border: none;
+        padding: 1rem;
+        resize: none;
+    }
+    
+    textarea:focus {
+        outline:2px solid blueviolet;
+    }
+    select {
+       padding:.8rem;
+       border-radius: 1rem;
+       border: none;
+       outline: none;
+
+    }
+  } 
+ }
+ button {
+    margin-bottom: 2rem;
+    padding: .6rem 1rem;
+    background:blueviolet ;
+    border:none;
+    border-radius: 1rem;
+    color:#FFF;
+    font-weight:700;
+    font-size:1.6rem;
+
+ }
+
+ button:hover {
+    background: oklch(40.1% 0.17 325.612);
+    transition: ease-in-out.4s;
+    cursor:pointer
+ }
+
+ @media(max-width:768px){
+    #page{
+        padding-inline: 2rem;
+    }
+ }
